@@ -20,76 +20,106 @@ Easily manage your tasks — add, delete, mark done, and view todos — all from
 
 ## 🧩 Tech Stack
 
-|    Technology    |          Description           |
+|    Technology    |           Description          |
 |------------------|--------------------------------|
-| **Node.js**      | Runtime environment            |
-| **Commander.js** | CLI argument parser            |
+| **Node.js**      |      Runtime environment       |
+| **Commander.js** |      CLI argument parser       |
 | **fs / path**    | File system and path utilities |
 
 ---
 
 ## ⚙️ Installation
 
+```bash
 # Clone this repository
-git clone https://github.com/<your-username>/cli-todo-app.git
+git clone https://github.com/ankitrajgithub/CLI-based-todo.git
+
+# Navigate to project folder
+cd cli-todo-app
 
 # Install dependencies
 npm install
-🚀 Usage
-Run the app using Node.js:
+```
 
-➕ Add a Todo
-bash
-Copy code
+---
+
+## 🚀 Usage
+
+Run the app using **Node.js**:
+
+### ➕ Add a Todo
+```bash
 node index.js add "Buy groceries"
+```
 Output:
-
-Copy code
+```
 ✅ Todo added!
-📋 List Todos
-bash
-Copy code
-node index.js list
-Output:
+```
 
-yaml
-Copy code
+### 📋 List Todos
+```bash
+node index.js list
+```
+Output:
+```
 📝 Your Todos:
 0: Buy groceries ❌ Wed Nov 12 2025 00:15:42 GMT+0530 (India Standard Time)
-✅ Mark Todo as Done
-bash
-Copy code
+```
+
+### ✅ Mark Todo as Done
+```bash
 node index.js done 0
+```
 Output:
-
-bash
-Copy code
+```
 ✅ Todo marked as done!
-🗑️ Delete a Todo
-node index.js delete 0
-Output: 🗑️ Todo deleted!
+```
 
-Copy code
+### 🗑️ Delete a Todo
+```bash
+node index.js delete 0
+```
+Output:
+```
 🗑️ Todo deleted!
-📁 Project Structure
-bash
-Copy code
+```
+
+---
+
+## 📁 Project Structure
+
+```
 cli-todo-app/
 ├── index.js        # Main CLI logic
 ├── todo.json       # Local data file (auto-created)
 ├── package.json    # Project metadata & dependencies
 └── README.md       # Documentation
-💡 Example Workflow
-bash
-Copy code
+```
+
+---
+
+## 💡 Example Workflow
+
+```bash
 node index.js add "Complete assignment"
 node index.js add "Go for a run"
 node index.js list
 node index.js done 1
 node index.js list
 node index.js delete 0
-🧠 Future Enhancements
-🚀 Add task categories / tags
-🗓️ Add due dates
-🔍 Filter by completed or pending tasks
-☁️ Sync todos with cloud storage or a database
+```
+
+---
+
+## 🧠 Future Enhancements
+
+🚀 Add task categories / tags  
+🗓️ Add due dates  
+🔍 Filter by completed or pending tasks  
+☁️ Sync todos with cloud storage or a database  
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute it.
