@@ -34,9 +34,6 @@ Easily manage your tasks — add, delete, mark done, and view todos — all from
 # Clone this repository
 git clone https://github.com/ankitrajgithub/CLI-based-todo.git
 
-# Navigate to project folder
-cd cli-todo-app
-
 # Install dependencies
 npm install
 ```
